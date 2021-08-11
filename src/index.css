@@ -1,0 +1,120 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px;
+    margin: 0rem;
+    height: 100vh !important;
+    /* background-color: lightseagreen; */
+
+    border: '1px solid red',
+
+}
+html {
+    /* width: 100vw; */
+    padding: 0px;
+    margin: 0rem;
+    max-height: 100vh !important;
+    /* background-color: lightcoral; */
+    /* height: 100vh; */
+}
+
+.dont_scroll {
+    overflow: hidden;
+}
+
+.show {
+    z-index: 15;
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.negative_z_index {
+    z-index: -1 !important;
+}
+
+.fadeBackground {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.stop_scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+/* 
+.full_width {
+    position:absolute;
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color:blueviolet;
+    z-index: 3333;
+} */
+
+.full_width {
+    position:fixed;
+    top: 0px; 
+    left: 0px; 
+  
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    background-color:blueviolet;
+    /* z-index: 3333; */
+}
+
+.active_language {
+    color: #1B98CA !important;
+    text-decoration-line: underline !important;
+}
+
+/* [theme.breakpoints.only('sm')]: {
+    width: '50vw',
+    margin: 'auto',
+    left: '25vw',
+  },
+
+  [theme.breakpoints.up('md')]: {
+    maxWidth: '33.33vw !important',
+    margin: 'auto',
+    left: '33.33vw',
+  }, */
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+    html {
+        height: 100vh;
+    }
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* html {
+        height: 100vh;
+    } */
+    /* html {
+        max-width: 50vw;
+        margin: auto;
+        left: 25vw;
+    } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* html {
+        height: 100vh;
+    } */
+    /* html {
+        max-width: 33.33vw !important;
+        margin: auto;
+        left: 33.33vw;
+    } */
+}
